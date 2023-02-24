@@ -1,1 +1,5 @@
-<p>restaurant-cuisine works!</p>
+<h1>List of {{cuisine | titlecase}} Restaurants</h1>
+<div *ngFor="let r of restaurantList">
+    <a [routerLink]="['/restaurant', r.restaurantId]">{{r.name}}</a>
+</div>
+<button type="button" [routerLink]="['/']"> Back</button>

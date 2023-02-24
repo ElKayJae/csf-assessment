@@ -1,1 +1,26 @@
-<p>restaurant-details works!</p>
+<p><b>Name:</b> {{ restaurant.name }}</p>
+<p><b>Cuisine:</b> {{ restaurant.cuisine }}</p>
+<p><b>Address:</b> {{ restaurant.address }}</p>
+
+<div>
+    <b>Comment</b>
+</div>
+<br>
+<form [formGroup]="form" (ngSubmit)="process()">
+    <div>
+        <b>Name: </b>
+        <input type="text" formControlName="name"/>
+    </div>
+    <br>
+    <div>
+        <b>Rating: </b>
+        <input type="number" formControlName="rating"/>
+    </div>
+    <br>
+    <div>
+        <textarea id="" cols="30" rows="10" formControlName="text" min="1" max="5"></textarea>
+    </div>
+    <button type="button" (click)="back()">Back</button> &nbsp; &nbsp;
+    <button type="submit" [disabled]="form.invalid">Submit</button>
+
+</form>

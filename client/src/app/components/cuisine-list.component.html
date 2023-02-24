@@ -1,1 +1,6 @@
-<p>cuisine-list works!</p>
+<h1>List of Cuisine</h1>
+
+<div *ngFor="let c of cuisineList">
+    <a [routerLink]="['/cuisine', c]">{{c}}</a>
+</div>
+
