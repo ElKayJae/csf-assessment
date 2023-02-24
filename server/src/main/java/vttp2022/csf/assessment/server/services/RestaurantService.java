@@ -48,8 +48,8 @@ public class RestaurantService {
 		// Implmementation in here
 		Optional<Restaurant> opt = restaurantRepo.getRestaurant(id);
 		Restaurant r = opt.get();
-		// String url = mapCache.getMap(r);
-		// r.setMapURL(url);
+		String url = mapCache.getMap(r);
+		r.setMapURL(url);
 		return Optional.of(r);
 	}
 
