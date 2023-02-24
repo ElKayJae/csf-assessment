@@ -37,10 +37,10 @@ public class MapService {
         try{
             HttpHeaders headers = new HttpHeaders();
             headers.setAccept(Collections.singletonList(MediaType.IMAGE_PNG));
-            HttpEntity<String> entity = new HttpEntity<>("body", headers);
+            HttpEntity<String> entity = new HttpEntity<>(headers);
             resp = template.exchange(requestUrl, HttpMethod.GET, entity, byte[].class);
             System.out.println(resp.getBody());
-            
+
         } catch (Exception e) {
             e.printStackTrace();
         }
