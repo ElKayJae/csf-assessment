@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Optional;
 
 import org.bson.Document;
-import org.bson.conversions.Bson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
@@ -13,7 +12,6 @@ import org.springframework.data.mongodb.core.aggregation.Aggregation;
 import org.springframework.data.mongodb.core.aggregation.AggregationResults;
 import org.springframework.data.mongodb.core.aggregation.MatchOperation;
 import org.springframework.data.mongodb.core.aggregation.ProjectionOperation;
-import org.springframework.data.mongodb.core.aggregation.StringOperators.Concat;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
@@ -21,9 +19,7 @@ import org.springframework.stereotype.Repository;
 import jakarta.json.Json;
 import jakarta.json.JsonArray;
 import jakarta.json.JsonArrayBuilder;
-import jakarta.json.JsonObject;
 import vttp2022.csf.assessment.server.models.Comment;
-import vttp2022.csf.assessment.server.models.LatLng;
 import vttp2022.csf.assessment.server.models.Restaurant;
 import vttp2022.csf.assessment.server.utilities.Utils;
 

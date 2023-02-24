@@ -7,7 +7,6 @@ import org.bson.Document;
 import jakarta.json.Json;
 import jakarta.json.JsonArray;
 import jakarta.json.JsonObject;
-import jakarta.json.JsonObjectBuilder;
 import vttp2022.csf.assessment.server.models.Comment;
 import vttp2022.csf.assessment.server.models.LatLng;
 import vttp2022.csf.assessment.server.models.Restaurant;
